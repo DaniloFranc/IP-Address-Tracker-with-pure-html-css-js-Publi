@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Address Tracker</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+</style>
+<body class="corpo">
+    <div class="container">
+        <div class="caixaTopo">
+            <div class="caixa">
+                <div id="titulo" class="titulo">IP Address Tracker</div>
+                <div id="buscador" class="buscador">
+                    <div class="aling2">
+                        <input id="ipnumber" class="ipnumberstyle" placeholder="Search for any IP address or domain">
+                        <button id="bot" class="botao"><img src="icons/icon-arrow.svg" alt="Imagem"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="informacoes">
+                <div class="meio">
+                    <div>
+                        <div class="text">IP ADDRESS</div>
+                        <div id="ip" class="text02"></div>
+                    </div>
+                    <div class="linha-vetical"></div>
+                    <div>
+                        <div class="text">LOCATION</div>
+                        <div id="location" class="text02"></div>
+                    </div>
+                    <div class="linha-vetical"></div>
+                    <div>
+                        <div class="text">TIMEZONE</div>
+                        <div id="timezone" class="text02"></div>
+                    </div>
+                    <div class="linha-vetical"></div>
+                    <div>
+                        <div class="text">ISP</div>
+                        <div id="isp" class="text02"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="mapa" class="mapa"></div>
+    </div>
+
+    <script id="script" src="style.js" async defer></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</body>
+</html>

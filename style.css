@@ -1,0 +1,215 @@
+@media (min-width: 1440px) {
+    
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        
+    }
+
+    .caixaTopo {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-image: url('img/pattern-bg-desktop.png');
+        background-size: cover;        
+        background-position: center;
+        z-index: 2;
+        
+    }
+
+    .titulo {
+        display: flex;
+        justify-content: center;
+        font-family: "Rubik", sans-serif;
+        font-size: 30px;
+        color: white;
+        margin-bottom: 20px;
+        margin-top: 100px;
+    }
+
+    .text {
+        font-family: "Rubik", sans-serif;
+        color: hsl(0, 0%, 59%);
+        margin-bottom: 10px;
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+
+    .text02 {
+        font-family: "Rubik", sans-serif;
+        color: hsl(0, 0%, 17%);
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .aling2 {
+        display: flex;
+        justify-self: center;
+    }
+
+    .ipnumberstyle {
+        width: 400px;
+        height: 50px;
+        border: none;
+        font-size: 15px;
+        text-indent: 20px;
+        font-weight: bold;
+        border-radius: 10px 0 0 10px;
+        border-color: hsl(0, 0%, 94%);
+        margin-bottom: 50px;
+    }
+
+    .buscador {
+        display: flex;
+        justify-content: center;
+    }
+
+    .botao {
+        border: none;
+        cursor: pointer;
+        height: 52.5px;
+        background-color: black;
+        padding: 20px;
+        border-radius: 0 10px 10px 0;
+        margin-bottom: 50px;
+    }
+
+    .informacoes {
+        background-color: white;
+        padding: 40px;
+        margin: 0 50px;
+        margin-bottom: -50px;
+        border-radius: 10px;
+        z-index: 2;
+    }
+
+    .caixa{
+        margin-bottom: 10px;
+        margin-top: -50px;
+    }
+
+    .meio {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .linha-vetical {
+        background-color: hsl(0, 0%, 59%);
+        width: 1px;
+        height: 50px;
+        margin-top: 20px;
+    }
+
+    .mapa {
+        flex: 2;
+        z-index: 1;
+        
+    }
+}
+
+@media (max-width: 1440px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .caixaTopo {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-image: url('img/pattern-bg-desktop.png');
+        background-size: cover;
+        background-position: center;
+        
+    }
+
+    .titulo {
+        display: flex;
+        justify-content: center;
+        font-family: "Rubik", sans-serif;
+        font-size: 20px;
+        color: white;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .mapa {
+
+        flex: 3;
+        z-index: 0;
+        margin-top: -180px;
+        
+    }
+
+    .informacoes {
+        background-color: white;
+        padding: 20px;
+        margin: 0 50px;
+        border-radius: 10px;
+        z-index: 3;
+    }
+
+    .botao {
+        border: none;
+        cursor: pointer;
+        height: 52.5px;
+        background-color: black;
+        padding: 20px;
+        border-radius: 0 10px 10px 0;
+        margin-bottom: 50px;
+    }
+
+    .buscador {
+        display: flex;
+        justify-content: center;
+        margin-bottom: -30px;
+    }
+
+    .ipnumberstyle {
+        width: 50vw;
+        height: 50px;
+        border: none;
+        font-size: 15px;
+        text-indent: 20px;
+        font-weight: bold;
+        border-radius: 10px 0 0 10px;
+        border-color: hsl(0, 0%, 94%);
+        margin-bottom: 50px;
+    }
+
+    .aling2 {
+        display: flex;
+        justify-self: center;
+    }
+
+    input::placeholder {
+        font-size: 8px;
+    }
+
+    .text {
+        display: flex;
+        justify-content: center;
+        font-family: "Rubik", sans-serif;
+        color: hsl(0, 0%, 59%);
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        margin-top: 20px;
+    }
+
+    .text02 {
+        display: flex;
+        justify-content: center;
+        font-family: "Rubik", sans-serif;
+        color: hsl(0, 0%, 17%);
+        font-size: 15px;
+        font-weight: bold;
+    }
+}
