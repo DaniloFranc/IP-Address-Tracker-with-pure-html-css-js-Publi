@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
                     var customIcon = L.icon({
                         iconUrl: 'icons/icon-location.svg',
-                        iconSize: [200, 250],
+                        iconSize: [50, 60],
                     });
 
                     marker = L.marker([data.latitude, data.longitude], { icon: customIcon }).addTo(map)
