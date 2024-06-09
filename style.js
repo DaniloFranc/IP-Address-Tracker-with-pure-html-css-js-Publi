@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", function() {
     let map;
     let marker;
 
-    
     function fetchIPData(ip = '') {
         let url = ip ? `https://ipapi.co/${ip}/json/` : 'https://ipapi.co/json/';
         
@@ -18,9 +17,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 document.getElementById('timezone').textContent = 'UTC ' + formattedOffset;
                 document.getElementById('isp').textContent = data.org;
 
-                
-
-               
                 if (!map) {
                     
                     map = L.map('mapa', { zoomControl: false }).setView([data.latitude, data.longitude], 13);
@@ -31,18 +27,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
                     var customIcon = L.icon({
                         iconUrl: 'icons/icon-location.svg',
+                        iconSize: [200, 250],
                     });
 
                     marker = L.marker([data.latitude, data.longitude], { icon: customIcon }).addTo(map)
                         
                 } else {
                     
-                    
-                    map.setView([data.latitude, data.longitude], 13);
+                    map.setView([data.latitude, data.longitude]);
                     marker.setLatLng([data.latitude, data.longitude])
-                        .setPopupContent(`<b>${data.city}, ${data.region}, ${data.country_name}</b><br>IP: ${data.ip}`)
-                        
-
+                        .setPopupContent(`<b>${data.city}, ${data.region}, ${data.country_name}</b><br>IP: ${data.ip}`);
                 }
             })
             .catch(error => console.error('Error fetching IP data:', error));
@@ -57,7 +51,6 @@ document.addEventListener("DOMContentLoaded", function() {
         if (ipInput.value) {
             fetchIPData(ipInput.value);
         }
-        ipInput.value = ''; // Limpa o campo de entrada
+        ipInput.value = '';
     });
-
 });

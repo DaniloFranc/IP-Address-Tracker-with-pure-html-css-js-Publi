@@ -8,6 +8,10 @@
         
     }
 
+    .imagem{
+       width: 20%;
+    }
+
     .caixaTopo {
         flex: 1;
         display: flex;
@@ -24,17 +28,18 @@
         display: flex;
         justify-content: center;
         font-family: "Rubik", sans-serif;
-        font-size: 50px;
+        font-size: 100px;
         color: white;
-        margin-bottom: 20px;
-        margin-top: -200px;
+        margin-bottom: 1000px;
+        margin-top: -10px;
+        
     }
 
     .text {
         font-family: "Rubik", sans-serif;
         color: hsl(0, 0%, 59%);
-        margin-bottom: 10px;
-        font-size: 20px;
+        margin-bottom: 30px;
+        font-size: 40px;
         font-weight: bold;
         letter-spacing: 2px;
     }
@@ -42,7 +47,7 @@
     .text02 {
         font-family: "Rubik", sans-serif;
         color: hsl(0, 0%, 17%);
-        font-size: 35px;
+        font-size: 80px;
         font-weight: bold;
     }
 
@@ -52,37 +57,41 @@
     }
 
     .ipnumberstyle {
-        width: 700px;
-        height: 80px;
+        width: 1500px;
+        height: 200px;
         border: none;
-        font-size: 15px;
-        text-indent: 20px;
-        font-weight: bold;
-        border-radius: 10px 0 0 10px;
+        font-size: 50px;
+        text-indent: 100px;
+        /* font-weight: bold; */
+        border-radius: 55px 0 0 55px;
         border-color: hsl(0, 0%, 94%);
-        margin-bottom: 50px;
+        
+        
     }
 
     .buscador {
         display: flex;
         justify-content: center;
-        margin-top: 100px;
+        margin-top: -900px;
+        margin-bottom: 100px;
+        
+       
     }
 
     .botao {
         border: none;
         cursor: pointer;
-        width: 80px;
-        height: 82.5px;
+        width: 200px;
+        height: 205px;
         background-color: black;
         padding: 20px;
-        border-radius: 0 25px 25px 0;
-        margin-bottom: 50px;
+        border-radius: 0 55px 55px 0;
+        
     }
 
     .informacoes {
         background-color: white;
-        padding: 70px;        
+        padding: 150px;        
         margin: 0 500px;
         margin-bottom: -400px;
         border-radius: 10px;
@@ -102,8 +111,8 @@
 
     .linha-vetical {
         background-color: hsl(0, 0%, 59%);
-        width: 1px;
-        height: 50px;
+        width: 5px;
+        height: 200px;
         margin-top: 20px;
     }
 
@@ -111,6 +120,11 @@
         flex: 2;
         z-index: 1;
         
+    }
+
+
+    .leaflet-marker-icon{
+        width: 2000%;
     }
 }
 
